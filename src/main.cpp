@@ -16,7 +16,7 @@ mjrContext con;                     // custom GPU context
 int main(void)
 {
     // load model from file and check for errors
-    m = mj_loadXML("models/humanoid.xml", NULL, error, 1000);
+    m = mj_loadXML("models/humanoid.xml", nullptr, error, 1000);
     if( !m )
     {
         printf("%s\n", error);

@@ -33,6 +33,7 @@ WIN32_LINKOPTS = [
 LINUX_DEFINES = [
     "_GLFW_HAS_XF86VM",
     "_GLFW_X11",
+    "_GLFW_BUILD_DLL",
 ]
 
 LINUX_HDRS = [
@@ -53,7 +54,15 @@ LINUX_SRCS = [
     "src/x11_window.c",
 ]
 
-LINUX_LINKOPTS = []
+# The secret sauce were these links:
+LINUX_LINKOPTS = [
+    "-ldl",
+    "-lm",
+    "-lGL",
+    "-lGLU",
+    "-lX11",
+    "-lpthread",
+]
 
 # ===== darwin =====
 
