@@ -5,12 +5,14 @@ Toy repository showing how to simulate and visualize a mujuco simulation using M
 
 **How to run the code:**
 
-First create a python virtual environment
+First create a python virtual environment (Note: medipy requires ffmpeg to be installed)
 ```
 python3 -m venv env
 source env/bin/activate
 pip install --upgrade pip
 pip install mujoco
+pip install numpy
+pip install mediapy
 ```
 
 Run the python script from the root directory of the repository:
