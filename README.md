@@ -1,4 +1,6 @@
-Repo that simulates a block or humanoid as a mujoco trial
+Toy repository showing how to simulate and visualize a mujuco simulation using Bazel as the build system.
 
-run...
-bazel build //src:main
+To run the code:
+```
+bazel run //src:main
+```
