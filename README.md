@@ -4,6 +4,7 @@ Toy repository showing how to simulate and visualize a mujuco simulation using M
 
 
 **How to run the code:**
+
 First create a python virtual environment
 ```
 python3 -m venv env
